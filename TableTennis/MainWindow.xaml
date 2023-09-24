@@ -19,9 +19,295 @@
         <TabControl>
             <TabItem Header="Турнирная сетка">
                 <Grid>
-                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <!--#region Левая часть сетки-->
+                    <!--#region 1/8-->
+                    <TextBlock Text="1/8" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Player 1" 
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center" 
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="1" 
+                           Grid.Row="1"/>
+                    <Label Content="Player 2"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="1"
+                           Grid.Row="2"/>
+                    <Label Content="Player 3"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="1"
+                           Grid.Row="5"/>
+                    <Label Content="Player 4"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="1"
+                           Grid.Row="6"/>
+                    <Label Content="Player 5"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="1"
+                           Grid.Row="9"/>
+                    <Label Content="Player 6"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="1"
+                           Grid.Row="10"/>
+                    <Label Content="Player 7"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="1"
+                           Grid.Row="13"/>
+                    <Label Content="Player 8"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="1"
+                           Grid.Row="14"/>
+                    <!--#endregion-->
+                    <!--#region 1/4-->
+                    <TextBlock Text="1/4" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Player 1"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="3"
+                           Grid.Row="3"/>
+                    <Label Content="Player 3"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="3"
+                           Grid.Row="4"/>
+                    <Label Content="Player 5"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="3"
+                           Grid.Row="11"/>
+                    <Label Content="Player 7"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="3"
+                           Grid.Row="12"/>
+                    <!--#endregion-->
+                    <!--#region 1/2-->
+                    <TextBlock Text="1/2" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Player 1"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="5"
+                           Grid.Row="7"/>
+                    <Label Content="Player 5"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="5"
+                           Grid.Row="8"/>
+                    <!--#endregion-->
+                    <!--#endregion-->
+                    <!--#region Финалы-->
+                    <TextBlock Text="Финал" Grid.Column="8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Finalist 1"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="8"
+                           Grid.Row="7"/>
+                    <Label Content="Finalist 2"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="8"
+                           Grid.Row="8"/>
+                    <Label Content="Finalist 3"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="8"
+                           Grid.Row="13"/>
+                    <Label Content="Finalist 4"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="8"
+                           Grid.Row="14"/>
+                    <!--#endregion-->
+                    <!--#region Правая часть сетки-->
+                    <!--#region 1/8-->
+                    <TextBlock Text="1/8" Grid.Column="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Player 9" 
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center" 
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="15" 
+                           Grid.Row="1"/>
+                    <Label Content="Player 10"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="15"
+                           Grid.Row="2"/>
+                    <Label Content="Player 11"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="15"
+                           Grid.Row="5"/>
+                    <Label Content="Player 12"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="15"
+                           Grid.Row="6"/>
+                    <Label Content="Player 13"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="15"
+                           Grid.Row="9"/>
+                    <Label Content="Player 14"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="15"
+                           Grid.Row="10"/>
+                    <Label Content="Player 15"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="15"
+                           Grid.Row="13"/>
+                    <Label Content="Player 16"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="15"
+                           Grid.Row="14"/>
+                    <!--#endregion-->
+                    <!--#region 1/4-->
+                    <TextBlock Text="1/4" Grid.Column="13" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Player 9"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="13"
+                           Grid.Row="3"/>
+                    <Label Content="Player 11"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="13"
+                           Grid.Row="4"/>
+                    <Label Content="Player 13"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="13"
+                           Grid.Row="11"/>
+                    <Label Content="Player 15"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="13"
+                           Grid.Row="12"/>
+                    <!--#endregion-->
+                    <!--#region 1/2-->
+                    <TextBlock Text="1/2" Grid.Column="11" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Player 9"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="11"
+                           Grid.Row="7"/>
+                    <Label Content="Player 13"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="11"
+                           Grid.Row="8"/>
+                    <!--#endregion-->
+                    <!--#endregion-->  
                 </Grid>
             </TabItem>
+            <TabItem Header="Игроки"></TabItem>
             <TabItem Header="Рейтинг за месяц"></TabItem>
             <TabItem Header="Рейтинг за все время"></TabItem>
         </TabControl>
