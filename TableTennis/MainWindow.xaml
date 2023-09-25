@@ -60,6 +60,7 @@
                     <!--#region 1/8-->
                     <TextBlock Text="1/8" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     <Label Content="Player 1" 
+                           x:Name="Label1"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center" 
                            BorderBrush="Black"
@@ -67,6 +68,7 @@
                            Grid.Column="1" 
                            Grid.Row="1"/>
                     <Label Content="Player 2"
+                           x:Name="Label2"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
@@ -74,6 +76,7 @@
                            Grid.Column="1"
                            Grid.Row="2"/>
                     <Label Content="Player 3"
+                           x:Name="Label3"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
@@ -81,6 +84,7 @@
                            Grid.Column="1"
                            Grid.Row="5"/>
                     <Label Content="Player 4"
+                           x:Name="Label4"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
@@ -88,6 +92,7 @@
                            Grid.Column="1"
                            Grid.Row="6"/>
                     <Label Content="Player 5"
+                           x:Name="Label5"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
@@ -304,7 +309,8 @@
                            Grid.Column="11"
                            Grid.Row="8"/>
                     <!--#endregion-->
-                    <!--#endregion-->  
+                    <!--#endregion-->
+                    <Button Click="Generation" Grid.Column="8" Grid.Row="1" Background="Gray" Content="Генерация" FontWeight="Bold"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Игроки"></TabItem>
