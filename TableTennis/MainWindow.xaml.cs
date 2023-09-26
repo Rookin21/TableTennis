@@ -21,7 +21,8 @@ namespace TableTennis
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<string> list = (new string[] { "Айдар", "Александр Д.", "Александр Ф.", "Алмас", "Артем П." }).ToList(); //список
+
+        Random rnd = new Random();
 
         public MainWindow()
         {
@@ -30,11 +31,47 @@ namespace TableTennis
 
         private void Generation(object sender, RoutedEventArgs e)
         {
-            Label1.Content = list[new Random().Next(list.Count)];
-            Label2.Content = list[new Random().Next(list.Count)];
-            Label3.Content = list[new Random().Next(list.Count)];
-            Label4.Content = list[new Random().Next(list.Count)];
-            Label5.Content = list[new Random().Next(list.Count)];
+            List<string> Players = (new string[] { "Инсаф", "Радис", "Юрий", "Рустем", "Алмас", "Александр Ф.", "Артем П.", "Сергей О.",
+                                            "Даниил", "Линар", "Евгений Д.", "Раушан", "Ильнар", "Александр Д.", "Артур", "Фаиль" }).ToList(); //список
+           
+            Label1.Content = GetRandomElement(Players); ;
+
+            Label2.Content = GetRandomElement(Players); ;
+
+            Label3.Content = GetRandomElement(Players); ;
+
+            Label4.Content = GetRandomElement(Players); ;
+
+            Label5.Content = GetRandomElement(Players); ;
+
+            Label6.Content = GetRandomElement(Players); ;
+
+            Label7.Content = GetRandomElement(Players); ;
+
+            Label8.Content = GetRandomElement(Players); ;
+
+            Label9.Content = GetRandomElement(Players); ;
+
+            Label10.Content = GetRandomElement(Players); ;
+
+            Label11.Content = GetRandomElement(Players); ;
+
+            Label12.Content = GetRandomElement(Players); ;
+
+            Label13.Content = GetRandomElement(Players); ;
+
+            Label14.Content = GetRandomElement(Players); ;
+
+            Label15.Content = GetRandomElement(Players);;
+
+            Label16.Content = GetRandomElement(Players);
+        }
+
+        public string GetRandomElement(List<string> Players)
+        {
+            string RandomPlayer = Players[new Random().Next(Players.Count)];
+            Players.Remove(RandomPlayer);
+            return RandomPlayer;
         }
     }
 }

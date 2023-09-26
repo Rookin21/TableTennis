@@ -100,6 +100,7 @@
                            Grid.Column="1"
                            Grid.Row="9"/>
                     <Label Content="Player 6"
+                           x:Name="Label6"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
@@ -107,6 +108,7 @@
                            Grid.Column="1"
                            Grid.Row="10"/>
                     <Label Content="Player 7"
+                           x:Name="Label7"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
@@ -114,6 +116,7 @@
                            Grid.Column="1"
                            Grid.Row="13"/>
                     <Label Content="Player 8"
+                           x:Name="Label8"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
@@ -205,6 +208,7 @@
                     <!--#region 1/8-->
                     <TextBlock Text="1/8" Grid.Column="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     <Label Content="Player 9" 
+                           x:Name="Label9"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center" 
                            BorderBrush="Black"
@@ -212,6 +216,7 @@
                            Grid.Column="15" 
                            Grid.Row="1"/>
                     <Label Content="Player 10"
+                           x:Name="Label10"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
@@ -219,6 +224,7 @@
                            Grid.Column="15"
                            Grid.Row="2"/>
                     <Label Content="Player 11"
+                           x:Name="Label11"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
@@ -226,6 +232,7 @@
                            Grid.Column="15"
                            Grid.Row="5"/>
                     <Label Content="Player 12"
+                           x:Name="Label12"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
@@ -233,6 +240,7 @@
                            Grid.Column="15"
                            Grid.Row="6"/>
                     <Label Content="Player 13"
+                           x:Name="Label13"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
@@ -240,6 +248,7 @@
                            Grid.Column="15"
                            Grid.Row="9"/>
                     <Label Content="Player 14"
+                           x:Name="Label14"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
@@ -247,6 +256,7 @@
                            Grid.Column="15"
                            Grid.Row="10"/>
                     <Label Content="Player 15"
+                           x:Name="Label15"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
@@ -254,6 +264,7 @@
                            Grid.Column="15"
                            Grid.Row="13"/>
                     <Label Content="Player 16"
+                           x:Name="Label16"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
