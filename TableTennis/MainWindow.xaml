@@ -59,266 +59,282 @@
                     <!--#region Левая часть сетки-->
                     <!--#region 1/8-->
                     <TextBlock Text="1/8" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Label Content="Player 1" 
-                           x:Name="Label1"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center" 
-                           BorderBrush="Black"
-                           BorderThickness="1"
-                           Grid.Column="1" 
-                           Grid.Row="1"/>
-                    <Label Content="Player 2"
-                           x:Name="Label2"
-                           HorizontalContentAlignment="Center"
-                           VerticalContentAlignment="Center"
-                           BorderBrush="Black"
-                           BorderThickness="1"
-                           Grid.Column="1"
-                           Grid.Row="2"/>
-                    <Label Content="Player 3"
-                           x:Name="Label3"
+                    <Button Content="Player 1" 
+                            x:Name="ButtonPlayer1"
+                            HorizontalContentAlignment="Center"
+                            VerticalContentAlignment="Center" 
+                            BorderBrush="Black"
+                            BorderThickness="1"
+                            Grid.Column="1" 
+                            Grid.Row="1" Click="ButtonPlayer1_Click"/>
+                    <Button Content="Player 2"
+                           x:Name="ButtonPlayer2"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="1"
-                           Grid.Row="5"/>
-                    <Label Content="Player 4"
-                           x:Name="Label4"
+                           Grid.Row="2" Click="ButtonPlayer2_Click"/>
+                    <Button Content="Player 3"
+                           x:Name="ButtonPlayer3"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="1"
-                           Grid.Row="6"/>
-                    <Label Content="Player 5"
-                           x:Name="Label5"
+                           Grid.Row="5" Click="ButtonPlayer3_Click"/>
+                    <Button Content="Player 4"
+                           x:Name="ButtonPlayer4"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="1"
-                           Grid.Row="9"/>
-                    <Label Content="Player 6"
-                           x:Name="Label6"
+                           Grid.Row="6" Click="ButtonPlayer4_Click"/>
+                    <Button Content="Player 5"
+                           x:Name="ButtonPlayer5"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="1"
-                           Grid.Row="10"/>
-                    <Label Content="Player 7"
-                           x:Name="Label7"
+                           Grid.Row="9" Click="ButtonPlayer5_Click"/>
+                    <Button Content="Player 6"
+                           x:Name="ButtonPlayer6"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="1"
-                           Grid.Row="13"/>
-                    <Label Content="Player 8"
-                           x:Name="Label8"
+                           Grid.Row="10" Click="ButtonPlayer6_Click"/>
+                    <Button Content="Player 7"
+                           x:Name="ButtonPlayer7"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="1"
-                           Grid.Row="14"/>
+                           Grid.Row="13" Click="ButtonPlayer7_Click"/>
+                    <Button Content="Player 8"
+                           x:Name="ButtonPlayer8"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="1"
+                           Grid.Row="14" Click="ButtonPlayer8_Click"/>
                     <!--#endregion-->
                     <!--#region 1/4-->
                     <TextBlock Text="1/4" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Label Content="Player 1"
+                    <Button Content="PlayerQuarter 1"
+                           x:Name="PlayerQuarter1"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="3"
-                           Grid.Row="3"/>
-                    <Label Content="Player 3"
+                           Grid.Row="3" Click="PlayerQuarter1_Click"/>
+                    <Button Content="PlayerQuarter 2"
+                           x:Name="PlayerQuarter2"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="3"
-                           Grid.Row="4"/>
-                    <Label Content="Player 5"
+                           Grid.Row="4" Click="PlayerQuarter2_Click"/>
+                    <Button Content="PlayerQuarter 3"
+                           x:Name="PlayerQuarter3"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="3"
-                           Grid.Row="11"/>
-                    <Label Content="Player 7"
+                           Grid.Row="11" Click="PlayerQuarter3_Click"/>
+                    <Button Content="PlayerQuarter 4"
+                           x:Name="PlayerQuarter4"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="3"
-                           Grid.Row="12"/>
+                           Grid.Row="12" Click="PlayerQuarter4_Click"/>
                     <!--#endregion-->
                     <!--#region 1/2-->
                     <TextBlock Text="1/2" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Label Content="Player 1"
+                    <Button Content="PlayerSemiFinal 1"
+                           x:Name="PlayerSemiFinal1"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="5"
-                           Grid.Row="7"/>
-                    <Label Content="Player 5"
+                           Grid.Row="7" Click="PlayerSemiFinal1_Click"/>
+                    <Button Content="PlayerSemiFinal 2"
+                           x:Name="PlayerSemiFinal2"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="5"
-                           Grid.Row="8"/>
+                           Grid.Row="8" Click="PlayerSemiFinal2_Click"/>
                     <!--#endregion-->
                     <!--#endregion-->
                     <!--#region Финалы-->
                     <TextBlock Text="Финал" Grid.Column="8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Label Content="Finalist 1"
+                    <Button Content="Finalist 1"
+                           x:Name="Finalist1"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="8"
-                           Grid.Row="7"/>
-                    <Label Content="Finalist 2"
+                           Grid.Row="7" Click="Finalist1_Click"/>
+                    <Button Content="Finalist 2"
+                           x:Name="Finalist2"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="8"
-                           Grid.Row="8"/>
-                    <Label Content="Finalist 3"
+                           Grid.Row="8" Click="Finalist2_Click"/>
+                    <Button Content="Finalist 3"
+                           x:Name="Finalist3"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="8"
-                           Grid.Row="13"/>
-                    <Label Content="Finalist 4"
+                           Grid.Row="13" Click="Finalist3_Click"/>
+                    <Button Content="Finalist 4"
+                           x:Name="Finalist4"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="8"
-                           Grid.Row="14"/>
+                           Grid.Row="14" Click="Finalist4_Click"/>
                     <!--#endregion-->
                     <!--#region Правая часть сетки-->
                     <!--#region 1/8-->
                     <TextBlock Text="1/8" Grid.Column="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Label Content="Player 9" 
-                           x:Name="Label9"
+                    <Button Content="Player 9" 
+                           x:Name="ButtonPlayer9"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center" 
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="15" 
-                           Grid.Row="1"/>
-                    <Label Content="Player 10"
-                           x:Name="Label10"
+                           Grid.Row="1" Click="ButtonPlayer9_Click"/>
+                    <Button Content="Player 10"
+                           x:Name="ButtonPlayer10"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="15"
-                           Grid.Row="2"/>
-                    <Label Content="Player 11"
-                           x:Name="Label11"
+                           Grid.Row="2" Click="ButtonPlayer10_Click"/>
+                    <Button Content="Player 11"
+                           x:Name="ButtonPlayer11"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="15"
-                           Grid.Row="5"/>
-                    <Label Content="Player 12"
-                           x:Name="Label12"
+                           Grid.Row="5" Click="ButtonPlayer11_Click"/>
+                    <Button Content="Player 12"
+                           x:Name="ButtonPlayer12"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="15"
-                           Grid.Row="6"/>
-                    <Label Content="Player 13"
-                           x:Name="Label13"
+                           Grid.Row="6" Click="ButtonPlayer12_Click"/>
+                    <Button Content="Player 13"
+                           x:Name="ButtonPlayer13"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="15"
-                           Grid.Row="9"/>
-                    <Label Content="Player 14"
-                           x:Name="Label14"
+                           Grid.Row="9" Click="ButtonPlayer13_Click"/>
+                    <Button Content="Player 14"
+                           x:Name="ButtonPlayer14"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="15"
-                           Grid.Row="10"/>
-                    <Label Content="Player 15"
-                           x:Name="Label15"
+                           Grid.Row="10" Click="ButtonPlayer14_Click"/>
+                    <Button Content="Player 15"
+                           x:Name="ButtonPlayer15"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="15"
-                           Grid.Row="13"/>
-                    <Label Content="Player 16"
-                           x:Name="Label16"
+                           Grid.Row="13" Click="ButtonPlayer15_Click"/>
+                    <Button Content="Player 16"
+                           x:Name="ButtonPlayer16"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="15"
-                           Grid.Row="14"/>
+                           Grid.Row="14" Click="ButtonPlayer16_Click"/>
                     <!--#endregion-->
                     <!--#region 1/4-->
                     <TextBlock Text="1/4" Grid.Column="13" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Label Content="Player 9"
+                    <Button Content="PlayerQuarter 5"
+                           x:Name="PlayerQuarter5"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="13"
-                           Grid.Row="3"/>
-                    <Label Content="Player 11"
+                           Grid.Row="3" Click="PlayerQuarter5_Click"/>
+                    <Button Content="PlayerQuarter 6"
+                           x:Name="PlayerQuarter6"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="13"
-                           Grid.Row="4"/>
-                    <Label Content="Player 13"
+                           Grid.Row="4" Click="PlayerQuarter6_Click"/>
+                    <Button Content="PlayerQuarter 7"
+                           x:Name="PlayerQuarter7"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="13"
-                           Grid.Row="11"/>
-                    <Label Content="Player 15"
+                           Grid.Row="11" Click="PlayerQuarter7_Click"/>
+                    <Button Content="PlayerQuarter 8"
+                           x:Name="PlayerQuarter8"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="13"
-                           Grid.Row="12"/>
+                           Grid.Row="12" Click="PlayerQuarter8_Click"/>
                     <!--#endregion-->
                     <!--#region 1/2-->
                     <TextBlock Text="1/2" Grid.Column="11" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Label Content="Player 9"
+                    <Button Content="PlayerSemiFinal 3"
+                           x:Name="PlayerSemiFinal3"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="11"
-                           Grid.Row="7"/>
-                    <Label Content="Player 13"
+                           Grid.Row="7" Click="PlayerSemiFinal3_Click"/>
+                    <Button Content="PlayerSemiFinal 4"
+                           x:Name="PlayerSemiFinal4"
                            HorizontalContentAlignment="Center"
                            VerticalContentAlignment="Center"
                            BorderBrush="Black"
                            BorderThickness="1"
                            Grid.Column="11"
-                           Grid.Row="8"/>
+                           Grid.Row="8" Click="PlayerSemiFinal4_Click"/>
                     <!--#endregion-->
                     <!--#endregion-->
                     <Button Click="Generation" Grid.Column="8" Grid.Row="1" Background="Gray" Content="Генерация" FontWeight="Bold"/>
