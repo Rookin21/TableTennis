@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -30,7 +31,19 @@ namespace TableTennis
         }
 
         /// <summary>
-        /// Генерация сетки 1/8
+        /// Получение радномного игрока из списка
+        /// </summary>
+        /// <param name="Players"></param>
+        /// <returns></returns>
+        private string GetRandomElement(List<string> Players)
+        {
+            string RandomPlayer = Players[new Random().Next(Players.Count)];
+            Players.Remove(RandomPlayer);
+            return RandomPlayer;
+        }
+
+        /// <summary>
+        /// Генерация одиночной турнирной сетки
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -72,19 +85,7 @@ namespace TableTennis
             ButtonPlayer16.Content = GetRandomElement(Players);
         }
 
-        /// <summary>
-        /// Получение радномного игрока из списка
-        /// </summary>
-        /// <param name="Players"></param>
-        /// <returns></returns>
-        public string GetRandomElement(List<string> Players)
-        {
-            string RandomPlayer = Players[new Random().Next(Players.Count)];
-            Players.Remove(RandomPlayer);
-            return RandomPlayer;
-        }
-
-        #region Кнопки прохождения игроков по турнирной сетке
+        #region Кнопки прохождения игроков по одиночной турнирной сетке
 
         #region Кнопки 1/8
 
@@ -325,10 +326,49 @@ namespace TableTennis
 
         #endregion
 
+        /// <summary>
+        /// Генерация парной турнирной сетки
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PairGameGeneration(object sender, RoutedEventArgs e)
         {
+            List<string> Players = (new string[] { "Инсаф", "Радис", "Юрий", "Рустем", "Алмас", "Александр Ф.", "Артем П.", "Сергей О.",
+                                            "Даниил", "Линар", "Евгений Д.", "Раушан", "Ильнар", "Александр Д.", "Артур", "Фаиль" }).ToList(); //список
 
+            PairPlayer1.Content = GetRandomElement(Players);
+
+            PairPlayer2.Content = GetRandomElement(Players);
+
+            PairPlayer3.Content = GetRandomElement(Players);
+
+            PairPlayer4.Content = GetRandomElement(Players);
+
+            PairPlayer5.Content = GetRandomElement(Players);
+
+            PairPlayer6.Content = GetRandomElement(Players);
+
+            PairPlayer7.Content = GetRandomElement(Players);
+
+            PairPlayer8.Content = GetRandomElement(Players);
+
+            PairPlayer9.Content = GetRandomElement(Players);
+
+            PairPlayer10.Content = GetRandomElement(Players);
+
+            PairPlayer11.Content = GetRandomElement(Players);
+
+            PairPlayer12.Content = GetRandomElement(Players);
+
+            PairPlayer13.Content = GetRandomElement(Players);
+
+            PairPlayer14.Content = GetRandomElement(Players);
+
+            PairPlayer15.Content = GetRandomElement(Players);
+
+            PairPlayer16.Content = GetRandomElement(Players);
         }
+
 
         /// <summary>
         /// Очистка турнирной сетки
@@ -371,6 +411,86 @@ namespace TableTennis
             ButtonFinalist1.Content = ButtonFinalist2.Content =
                 ButtonFinalist3.Content = ButtonFinalist4.Content = null;
             #endregion
+        }
+
+        private void FirstPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SecondPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ThirdPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FourthPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Fifth_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SixthPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SeventhPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void EighthPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SemiFinalFirstPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SemiFinalSecondPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SemiFinalThirdPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SemiFinalFourthPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FinalFirstPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FinalSecondPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FinalThirdPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FinalFourthPairWon_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

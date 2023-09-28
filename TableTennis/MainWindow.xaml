@@ -321,11 +321,6 @@
                         <ColumnDefinition Width="20*"/>
                         <ColumnDefinition Width="2*"/>
                         <ColumnDefinition Width="20*"/>
-                        <ColumnDefinition Width="2*"/>
-                        <ColumnDefinition Width="5*"/>
-                        <ColumnDefinition Width="20*"/>
-                        <ColumnDefinition Width="5*"/>
-                        <ColumnDefinition Width="2*"/>
                         <ColumnDefinition Width="20*"/>
                         <ColumnDefinition Width="2*"/>
                         <ColumnDefinition Width="20*"/>
@@ -352,254 +347,269 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <!--#region Левая часть сетки-->
-                    <!--#region 1/8-->
-                    <TextBlock Text="1/8" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Button x:Name="ButtonPairPlayer1" Background="White"                          
+                    <!--#region 1/4-->
+                    <TextBlock Text="1/4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label x:Name="PairPlayer1"                         
                             HorizontalContentAlignment="Center"
                             VerticalContentAlignment="Center" 
                             BorderBrush="Black"
                             BorderThickness="1"
                             Grid.Column="1" 
                             Grid.Row="1"/>
-                    <Button x:Name="ButtonPairPlayer2" Background="White"                        
+                    <Label x:Name="PairPlayer2"                       
                             HorizontalContentAlignment="Center"
                             VerticalContentAlignment="Center"
                             BorderBrush="Black"
                             BorderThickness="1"
                             Grid.Column="1"
                             Grid.Row="2"/>
-                    <Button x:Name="ButtonPairPlayer3" Background="White"                          
+                    <Label x:Name="PairPlayer3"                         
                             HorizontalContentAlignment="Center"
                             VerticalContentAlignment="Center"
                             BorderBrush="Black"
                             BorderThickness="1"
                             Grid.Column="1"
                             Grid.Row="5"/>
-                    <Button x:Name="ButtonPairPlayer4" Background="White"                           
+                    <Label x:Name="PairPlayer4"                        
                             HorizontalContentAlignment="Center"
                             VerticalContentAlignment="Center"
                             BorderBrush="Black"
                             BorderThickness="1"
                             Grid.Column="1"
                             Grid.Row="6"/>
-                    <Button x:Name="ButtonPairPlayer5" Background="White"                          
+                    <Label x:Name="PairPlayer5"                     
                             HorizontalContentAlignment="Center"
                             VerticalContentAlignment="Center"
                             BorderBrush="Black"
                             BorderThickness="1"
                             Grid.Column="1"
                             Grid.Row="9"/>
-                    <Button x:Name="ButtonPairPlayer6" Background="White"                           
+                    <Label x:Name="PairPlayer6"                         
                             HorizontalContentAlignment="Center"
                             VerticalContentAlignment="Center"
                             BorderBrush="Black"
                             BorderThickness="1"
                             Grid.Column="1"
                             Grid.Row="10"/>
-                    <Button x:Name="ButtonPairPlayer7" Background="White"                           
+                    <Label x:Name="PairPlayer7"                      
                             HorizontalContentAlignment="Center"
                             VerticalContentAlignment="Center"
                             BorderBrush="Black"
                             BorderThickness="1"
                             Grid.Column="1"
                             Grid.Row="13"/>
-                    <Button x:Name="ButtonPairPlayer8" Background="White"                           
+                    <Label x:Name="PairPlayer8"                       
                             HorizontalContentAlignment="Center"
                             VerticalContentAlignment="Center"
                             BorderBrush="Black"
                             BorderThickness="1"
                             Grid.Column="1"
                             Grid.Row="14"/>
-                    <!--#endregion-->
-                    <!--#region 1/4-->
-                    <TextBlock Text="1/4" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Button x:Name="PlayerPairQuarter1" Background="White"                           
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="3"
-                            Grid.Row="3"/>
-                    <Button x:Name="PlayerPairQuarter2" Background="White"                          
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="3"
-                            Grid.Row="4"/>
-                    <Button x:Name="PlayerPairQuarter3" Background="White"                          
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="3"
-                            Grid.Row="11"/>
-                    <Button x:Name="PlayerPairQuarter4" Background="White"                          
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="3"
-                            Grid.Row="12"/>
+                    <CheckBox x:Name="FisrtPairWon" Grid.Column="1" Grid.Row="2" Click="FirstPairWon_Click"/>
+                    <CheckBox x:Name="SecondPairWon" Grid.Column="1" Grid.Row="6" Click="SecondPairWon_Click"/>
+                    <CheckBox x:Name="ThirdPairWon" Grid.Column="1" Grid.Row="10" Click="ThirdPairWon_Click"/>
+                    <CheckBox x:Name="FourthPairWon" Grid.Column="1" Grid.Row="14" Click="FourthPairWon_Click"/>
                     <!--#endregion-->
                     <!--#region 1/2-->
-                    <TextBlock Text="1/2" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Button x:Name="PairPlayerSemiFinal1" Background="White"                        
-                        HorizontalContentAlignment="Center"
-                        VerticalContentAlignment="Center"
-                        BorderBrush="Black"
-                        BorderThickness="1"
-                        Grid.Column="5"
-                        Grid.Row="7"/>
-                    <Button x:Name="PairPlayerSemiFinal2" Background="White"                          
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="5"
-                            Grid.Row="8"/>
+                    <TextBlock Text="1/2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label x:Name="SemiFinalPairPlayer1"  
+                           HorizontalContentAlignment="Center"  
+                           VerticalContentAlignment="Center"  
+                           BorderBrush="Black"  
+                           BorderThickness="1"  
+                           Grid.Column="3"  
+                           Grid.Row="3"/>
+                    <Label x:Name="SemiFinalPairPlayer2" 
+                           HorizontalContentAlignment="Center" 
+                           VerticalContentAlignment="Center" 
+                           BorderBrush="Black" 
+                           BorderThickness="1" 
+                           Grid.Column="3" 
+                           Grid.Row="4"/>
+                    <Label x:Name="SemiFinalPairPlayer3" 
+                           HorizontalContentAlignment="Center" 
+                           VerticalContentAlignment="Center"  
+                           BorderBrush="Black"  
+                           BorderThickness="1"  
+                           Grid.Column="3" 
+                           Grid.Row="11"/>
+                    <Label x:Name="SemiFinalPairPlayer4" 
+                           HorizontalContentAlignment="Center" 
+                           VerticalContentAlignment="Center"  
+                           BorderBrush="Black"  
+                           BorderThickness="1"  
+                           Grid.Column="3" 
+                           Grid.Row="12"/>
+                    <CheckBox x:Name="SemiFinalFirstPairWon" Grid.Column="3" Grid.Row="4" Click="SemiFinalFirstPairWon_Click"/>
+                    <CheckBox x:Name="SemiFinalSecondPairWon" Grid.Column="3" Grid.Row="12" Click="SemiFinalSecondPairWon_Click"/>
                     <!--#endregion-->
-                    <!--#endregion-->
-                    <!--#region Финалы-->
-                    <TextBlock Text="Финал" Grid.Column="8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Button x:Name="PairFinalist1" Background=""                         
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="8"
-                            Grid.Row="7"/>
-                    <Button x:Name="PairFinalist2" Background="White"                           
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="8"
-                            Grid.Row="8"/>
-                    <Button x:Name="PairFinalist3" Background="White"                            
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="8"
-                            Grid.Row="13"/>
-                    <Button x:Name="PairFinalist4" Background="White"                             
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="8"
-                            Grid.Row="14"/>
-                    <!--#endregion-->
+                    <!--#endregion -->
                     <!--#region Правая часть сетки-->
-                    <!--#region 1/8-->
-                    <TextBlock Text="1/8" Grid.Column="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Button x:Name="PairPlayer9" Background="White"                          
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center" 
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="15" 
-                            Grid.Row="1" Click="ButtonPlayer9_Click"/>
-                    <Button x:Name="PairPlayer10" Background="White"                           
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="15"
-                            Grid.Row="2"/>
-                    <Button x:Name="PairPlayer11" Background="White"                           
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="15"
-                            Grid.Row="5"/>
-                    <Button x:Name="PairPlayer12" Background="White"                            
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="15" 
-                            Grid.Row="6"/>
-                    <Button x:Name="PairPlayer13" Background="White"                           
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="15"
-                            Grid.Row="9"/>
-                    <Button x:Name="PairPlayer14" Background="White"                           
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="15"
-                            Grid.Row="10"/>
-                    <Button x:Name="PairPlayer15" Background="White"                          
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="15"
-                            Grid.Row="13"/>
-                    <Button x:Name="PairPlayer16" Background="White"                          
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="15"
-                            Grid.Row="14"/>
-                    <!--#endregion-->
                     <!--#region 1/4-->
-                    <TextBlock Text="1/4" Grid.Column="13" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Button x:Name="PlayerPairQuarter5" Background="White"                          
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="13"
-                            Grid.Row="3"/>
-                    <Button x:Name="PlayerPairQuarter6" Background="White"
-                            
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="13"
-                            Grid.Row="4"/>
-                    <Button x:Name="PlayerPairQuarter7" Background="White"                           
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="13"
-                            Grid.Row="11"/>
-                    <Button x:Name="PlayerPairQuarter8" Background="White"                            
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="13"
-                            Grid.Row="12"/>
+                    <TextBlock Text="1/4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label x:Name="PairPlayer9"                         
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center" 
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="10" 
+                           Grid.Row="1"/>
+                    <Label x:Name="PairPlayer10"                       
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="10"
+                           Grid.Row="2"/>
+                    <Label x:Name="PairPlayer11"                         
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="10"
+                           Grid.Row="5"/>
+                    <Label x:Name="PairPlayer12"                        
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="10"
+                           Grid.Row="6"/>
+                    <Label x:Name="PairPlayer13"                     
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="10"
+                           Grid.Row="9"/>
+                    <Label x:Name="PairPlayer14"                         
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="10"
+                           Grid.Row="10"/>
+                    <Label x:Name="PairPlayer15"                       
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center" 
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="10"
+                           Grid.Row="13"/>
+                    <Label x:Name="PairPlayer16"                       
+                           HorizontalContentAlignment="Center" 
+                           VerticalContentAlignment="Center" 
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="10"
+                           Grid.Row="14"/>
+                    <CheckBox x:Name="FifthPairWon" Grid.Column="10" Grid.Row="2" Click="Fifth_Click"/>
+                    <CheckBox x:Name="SixthPairWon" Grid.Column="10" Grid.Row="6" Click="SixthPairWon_Click"/>
+                    <CheckBox x:Name="SeventhPairWon" Grid.Column="10" Grid.Row="10" Click="SeventhPairWon_Click"/>
+                    <CheckBox x:Name="EighthPairWon" Grid.Column="10" Grid.Row="14" Click="EighthPairWon_Click"/>
                     <!--#endregion-->
                     <!--#region 1/2-->
-                    <TextBlock Text="1/2" Grid.Column="11" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Button x:Name="PlayerPairSemiFinal3" Background="White"                           
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="11"
-                            Grid.Row="7"/>
-                    <Button x:Name="PlayerPairSemiFinal4" Background="White"                           
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="11"
-                            Grid.Row="8"/>
+                    <TextBlock Text="1/2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label x:Name="SemiFinalPairPlayer5"  
+                           HorizontalContentAlignment="Center"  
+                           VerticalContentAlignment="Center"  
+                           BorderBrush="Black"  
+                           BorderThickness="1"  
+                           Grid.Column="8"  
+                           Grid.Row="3"/>
+                    <Label x:Name="SemiFinalPairPlayer6" 
+                           HorizontalContentAlignment="Center" 
+                           VerticalContentAlignment="Center" 
+                           BorderBrush="Black" 
+                           BorderThickness="1" 
+                           Grid.Column="8" 
+                           Grid.Row="4"/>
+                    <Label x:Name="SemiFinalPairPlayer7" 
+                           HorizontalContentAlignment="Center" 
+                           VerticalContentAlignment="Center"  
+                           BorderBrush="Black" 
+                           BorderThickness="1"  
+                           Grid.Column="8" 
+                           Grid.Row="11"/>
+                    <Label x:Name="SemiFinalPairPlayer8" 
+                           HorizontalContentAlignment="Center" 
+                           VerticalContentAlignment="Center"  
+                           BorderBrush="Black"   
+                           BorderThickness="1"  
+                           Grid.Column="8"  
+                           Grid.Row="12"/>
+                    <CheckBox x:Name="SemiFinalThirdPairWon" Grid.Column="8" Grid.Row="4" Click="SemiFinalThirdPairWon_Click"/>
+                    <CheckBox x:Name="SemiFinalFourthPairWon" Grid.Column="8" Grid.Row="12" Click="SemiFinalFourthPairWon_Click"/>
                     <!--#endregion-->
+                    <!--#endregion -->
+                    <!--#region Финал-->
+                    <TextBlock Text="Финал" Grid.Column="5" Grid.Row="6" 
+                               HorizontalAlignment="Left" VerticalAlignment="Center" 
+                               Grid.ColumnSpan="2" Margin="208,0,0,0">
+                    </TextBlock>
+                    <Label x:Name="PairFinalist1"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="5"
+                           Grid.Row="7"/>
+                    <Label x:Name="PairFinalist2"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="5"
+                           Grid.Row="8"/>
+                    <Label x:Name="PairFinalist3"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="6"
+                           Grid.Row="7"/>
+                    <Label x:Name="PairFinalist4"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="6"
+                           Grid.Row="8"/>
+                    <CheckBox x:Name="FinalFirstPairWon" Grid.Column="5" Grid.Row="8" Click="FinalFirstPairWon_Click"/>
+                    <CheckBox x:Name="FinalSecondPairWon" Grid.Column="6" Grid.Row="8" Click="FinalSecondPairWon_Click"/>
+                    <TextBlock Text="Бронзовый финал" Grid.Column="5" Grid.Row="11" 
+                               HorizontalAlignment="Left" VerticalAlignment="Center" 
+                               Grid.ColumnSpan="2" Margin="175,0,0,0"/>
+                    <Label x:Name="PairFinalist5"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="5"
+                           Grid.Row="12"/>
+                    <Label x:Name="PairFinalist6"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="5"
+                           Grid.Row="13"/>
+                    <Label x:Name="PairFinalist7"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="6"
+                           Grid.Row="12"/>
+                    <Label x:Name="PairFinalist8"
+                           HorizontalContentAlignment="Center"
+                           VerticalContentAlignment="Center"
+                           BorderBrush="Black"
+                           BorderThickness="1"
+                           Grid.Column="6"
+                           Grid.Row="13"/>
+                    <CheckBox x:Name="FinalThirdPairWon" Grid.Column="5" Grid.Row="13" Click="FinalThirdPairWon_Click"/>
+                    <CheckBox x:Name="FinalFourthPairWon" Grid.Column="6" Grid.Row="13" Click="FinalFourthPairWon_Click"/>
                     <!--#endregion-->
                 </Grid>
             </TabItem>
