@@ -413,84 +413,180 @@ namespace TableTennis
             #endregion
         }
 
+        #region Прохождения игроков по парной турнирной сетке
+
         private void FirstPairWon_Click(object sender, RoutedEventArgs e)
         {
+            PairPlayer1.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairPlayer2.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairPlayer3.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairPlayer4.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
 
+            SemiFinalPairPlayer1.Content = PairPlayer1.Content;
+            SemiFinalPairPlayer2.Content = PairPlayer2.Content;
         }
-
+      
         private void SecondPairWon_Click(object sender, RoutedEventArgs e)
         {
+            PairPlayer1.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairPlayer2.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairPlayer3.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairPlayer4.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));          
 
+            SemiFinalPairPlayer1.Content = PairPlayer3.Content;
+            SemiFinalPairPlayer2.Content = PairPlayer4.Content;
         }
 
         private void ThirdPairWon_Click(object sender, RoutedEventArgs e)
         {
+            PairPlayer5.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairPlayer6.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairPlayer7.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairPlayer8.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
 
+            SemiFinalPairPlayer3.Content = PairPlayer5.Content;
+            SemiFinalPairPlayer4.Content = PairPlayer6.Content;
         }
 
         private void FourthPairWon_Click(object sender, RoutedEventArgs e)
         {
+            PairPlayer5.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairPlayer6.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairPlayer7.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairPlayer8.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
 
+            SemiFinalPairPlayer3.Content = PairPlayer7.Content;
+            SemiFinalPairPlayer4.Content = PairPlayer8.Content;
         }
 
         private void Fifth_Click(object sender, RoutedEventArgs e)
         {
+            PairPlayer9.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairPlayer10.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairPlayer11.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairPlayer12.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
 
+            SemiFinalPairPlayer5.Content = PairPlayer9.Content;
+            SemiFinalPairPlayer6.Content = PairPlayer10.Content;
         }
 
         private void SixthPairWon_Click(object sender, RoutedEventArgs e)
         {
+            PairPlayer9.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairPlayer10.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairPlayer11.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairPlayer12.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
 
+            SemiFinalPairPlayer5.Content = PairPlayer11.Content;
+            SemiFinalPairPlayer6.Content = PairPlayer12.Content;
         }
 
         private void SeventhPairWon_Click(object sender, RoutedEventArgs e)
         {
+            PairPlayer13.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairPlayer14.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairPlayer15.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairPlayer16.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
 
+            SemiFinalPairPlayer7.Content = PairPlayer13.Content;
+            SemiFinalPairPlayer8.Content = PairPlayer14.Content;
         }
 
         private void EighthPairWon_Click(object sender, RoutedEventArgs e)
         {
+            PairPlayer13.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairPlayer14.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairPlayer15.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairPlayer16.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
 
+            SemiFinalPairPlayer7.Content = PairPlayer15.Content;
+            SemiFinalPairPlayer8.Content = PairPlayer16.Content;
         }
 
         private void SemiFinalFirstPairWon_Click(object sender, RoutedEventArgs e)
         {
+            SemiFinalPairPlayer1.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            SemiFinalPairPlayer2.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            SemiFinalPairPlayer3.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            SemiFinalPairPlayer4.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
 
+            PairFinalist1.Content = SemiFinalPairPlayer1.Content;
+            PairFinalist2.Content = SemiFinalPairPlayer2.Content;
+            PairFinalist5.Content = SemiFinalPairPlayer3.Content;
+            PairFinalist6.Content = SemiFinalPairPlayer4.Content;
         }
 
         private void SemiFinalSecondPairWon_Click(object sender, RoutedEventArgs e)
         {
+            SemiFinalPairPlayer1.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            SemiFinalPairPlayer2.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            SemiFinalPairPlayer3.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            SemiFinalPairPlayer4.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
 
+            PairFinalist1.Content = SemiFinalPairPlayer3.Content;
+            PairFinalist2.Content = SemiFinalPairPlayer4.Content;
+            PairFinalist5.Content = SemiFinalPairPlayer1.Content;
+            PairFinalist6.Content = SemiFinalPairPlayer2.Content;
         }
 
         private void SemiFinalThirdPairWon_Click(object sender, RoutedEventArgs e)
         {
+            SemiFinalPairPlayer5.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            SemiFinalPairPlayer6.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            SemiFinalPairPlayer7.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            SemiFinalPairPlayer8.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
 
+            PairFinalist3.Content = SemiFinalPairPlayer5.Content;
+            PairFinalist4.Content = SemiFinalPairPlayer6.Content;
+            PairFinalist7.Content = SemiFinalPairPlayer7.Content;
+            PairFinalist8.Content = SemiFinalPairPlayer8.Content;
         }
 
         private void SemiFinalFourthPairWon_Click(object sender, RoutedEventArgs e)
         {
+            SemiFinalPairPlayer5.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            SemiFinalPairPlayer6.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            SemiFinalPairPlayer7.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            SemiFinalPairPlayer8.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
 
+            PairFinalist3.Content = SemiFinalPairPlayer7.Content;
+            PairFinalist4.Content = SemiFinalPairPlayer8.Content;
+            PairFinalist7.Content = SemiFinalPairPlayer5.Content;
+            PairFinalist8.Content = SemiFinalPairPlayer6.Content;
         }
 
         private void FinalFirstPairWon_Click(object sender, RoutedEventArgs e)
         {
-
+            PairFinalist1.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairFinalist2.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairFinalist3.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairFinalist4.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
         }
 
         private void FinalSecondPairWon_Click(object sender, RoutedEventArgs e)
         {
-
+            PairFinalist1.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairFinalist2.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairFinalist3.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairFinalist4.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
         }
 
         private void FinalThirdPairWon_Click(object sender, RoutedEventArgs e)
         {
-
+            PairFinalist5.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairFinalist6.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairFinalist7.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairFinalist8.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
         }
 
         private void FinalFourthPairWon_Click(object sender, RoutedEventArgs e)
         {
+            PairFinalist5.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairFinalist6.Background = new SolidColorBrush(Color.FromRgb(200, 0, 0));
+            PairFinalist7.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
+            PairFinalist8.Background = new SolidColorBrush(Color.FromRgb(2, 190, 0));
 
         }
+        #endregion
     }
 }
