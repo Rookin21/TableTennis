@@ -312,7 +312,7 @@
                     <!--#endregion-->
                 </Grid>
             </TabItem>
-            <TabItem Header="Парная турнирная сетка">
+            <TabItem Header="Парная турнирная сетка" x:Name="Pair">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="2*"/>
@@ -503,7 +503,7 @@
                            BorderThickness="1"
                            Grid.Column="10"
                            Grid.Row="14"/>
-                    <CheckBox x:Name="FifthPairWon" Grid.Column="10" Grid.Row="2" Click="Fifth_Click"/>
+                    <CheckBox x:Name="FifthPairWon" Grid.Column="10" Grid.Row="2" Click="FifthPairWon_Click"/>
                     <CheckBox x:Name="SixthPairWon" Grid.Column="10" Grid.Row="6" Click="SixthPairWon_Click"/>
                     <CheckBox x:Name="SeventhPairWon" Grid.Column="10" Grid.Row="10" Click="SeventhPairWon_Click"/>
                     <CheckBox x:Name="EighthPairWon" Grid.Column="10" Grid.Row="14" Click="EighthPairWon_Click"/>
